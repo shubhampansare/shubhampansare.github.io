@@ -13,6 +13,7 @@
 ## Global Constraints
 
 - NEVER use em dashes in any output: site copy, commit messages, README, comments. Plain hyphens only. (User's global rule.)
+- NEVER mention ADHD or any personal health information in ANY public content: the site, the profile README, repo names/descriptions, commit messages. (User's explicit rule, 2026-08-28.) Storywalk's public positioning is "built for restless attention spans".
 - The reading app is called **Storywalk** everywhere. The word "Hamming" must not appear anywhere on shoebum.io (it may appear in the Storywalk app itself; that app is out of scope).
 - The padel app is called **Padelato** on the site. In-app branding is out of scope.
 - Single-file philosophy: the portfolio is one `index.html`, no frameworks, no build step. Google Fonts is the only allowed external resource.
@@ -106,13 +107,13 @@ Meta description: Shubham Pansare builds AI apps and playful web things. SendRis
 HERO
   Wordmark: shoebum
   Headline: Hi, I'm Shubham. I turn odd little ideas into real, working apps.
-  Subline: I run Tuul, an AI studio that ships AI apps for clients. After hours I build small, sharp tools for things I care about: padel nights, matrimony biodatas, and reading with an ADHD brain.
+  Subline: I head product at Tuul, an AI studio that ships AI apps for clients. After hours I build small, sharp tools for things I care about: padel nights, matrimony biodatas, and long reads you can play.
   CTA buttons: "See my projects" (scrolls to Live projects), "Say hi" (scrolls to Contact)
 
 ABOUT (section heading: "A few interesting things about me")
   - I like single-file software. Padelato and Storywalk each ship as one HTML file: no build, no backend, no excuses.
   - I play padel, which is why Padelato exists. Fair draws and live standings beat spreadsheet chaos.
-  - I build ADHD-friendly tools. Storywalk exists because long-form reading should not require a neurotypical attention span.
+  - (Corrected in review, 2026-08-28: About cards are now personal - padel, motorhead, adrenaline, curiosity, food and people, dance/music/art. See index.html for the shipped copy.)
   - Day job: AI apps for clients at Tuul. Night job: whatever idea will not leave me alone.
 
 LIVE PROJECTS (section heading: "Live projects", subline: "Things you can use right now")
@@ -125,7 +126,7 @@ LIVE PROJECTS (section heading: "Live projects", subline: "Things you can use ri
     Link: /padelato/  (label: shoebum.io/padelato)
     Image: assets/padelato.png
   Card: Storywalk
-    One-liner: Long reads, played like a game. Walk through a classic talk one idea at a time. Built for ADHD brains.
+    One-liner: Long reads, played like a game. Walk through a classic talk one idea at a time. Built for restless attention spans.
     Link: /storywalk/  (label: shoebum.io/storywalk)
     Image: assets/storywalk.png
 
@@ -557,7 +558,7 @@ I build AI apps and playful web things. Everything I ship lives at
 - **[Padelato](https://shoebum.io/padelato/)** - padel Americano and Mexicano
   tournament nights without spreadsheets
 - **[Storywalk](https://shoebum.io/storywalk/)** - long reads, played like a
-  game; built for ADHD brains
+  game; built for restless attention spans
 
 ## Day job
 

@@ -98,13 +98,16 @@ Sections:
 
 1. **Hero** - shoebum identity, one-line intro of who Shubham is and what he does.
 2. **About** - interesting info, drafted strictly from facts already known
-   (runs Tuul, ships AI apps, plays padel, builds ADHD-friendly tools).
+   (heads product at Tuul, ships AI apps, plays padel, dances, loves driving,
+   adventure, science, food, and art). PUBLIC-CONTENT RULE (added 2026-08-28):
+   never mention ADHD or any personal health information anywhere public.
    User corrects and extends on review; nothing invented.
 3. **Live projects** - three cards with real screenshots and one-liners:
    - SendRishta -> sendrishta.com (matrimony biodata creator)
    - Padelato -> /padelato (free padel Americano/Mexicano tournament app)
-   - Storywalk -> /storywalk (long reads played like a game, built for ADHD
-     brains). Never referred to as "Hamming Path" anywhere on the site.
+   - Storywalk -> /storywalk (long reads played like a game, built for
+     restless attention spans). Never referred to as "Hamming Path" anywhere
+     on the site.
 4. **Products I've worked on** - AI Angler, FishScore, PawsitivID, Travjoy.
    Logos/screenshots pulled from existing project folders where available.
 5. **Contact** - GitHub + email; other links (LinkedIn/X) only if the user
