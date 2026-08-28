@@ -119,23 +119,26 @@ h2{
 .section-sub{margin-top:8px;font-size:17.5px;color:#4b4038}
 
 /* ---------- about ---------- */
-.about-grid{margin-top:36px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.about-grid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .note{
   background:var(--card);border:2px solid var(--ink);border-radius:var(--radius);
   padding:24px 26px;box-shadow:6px 6px 0 var(--ink);
-  transition:transform .18s ease,box-shadow .18s ease;font-size:16.5px;
+  transition:transform .18s ease,box-shadow .18s ease;font-size:16px;
 }
 .note strong{font-family:var(--display);font-variation-settings:"opsz" 30,"SOFT" 60,"WONK" 1;font-size:19px;font-weight:700;display:block;margin-bottom:6px}
-.note:nth-child(1){transform:rotate(-.7deg);background:#FFFDF9}
-.note:nth-child(2){transform:rotate(.6deg);background:#FDFFF6}
-.note:nth-child(3){transform:rotate(.5deg);background:#F6FFFB}
-.note:nth-child(4){transform:rotate(-.5deg);background:#FFF9F2}
+.note:nth-child(odd){transform:rotate(-.6deg)}
+.note:nth-child(even){transform:rotate(.6deg)}
+.note:nth-child(6n+1){background:#FFFDF9}
+.note:nth-child(6n+2){background:#FDFFF6}
+.note:nth-child(6n+3){background:#F6FFFB}
+.note:nth-child(6n+4){background:#FFF9F2}
+.note:nth-child(6n+5){background:#FDFFF6}
+.note:nth-child(6n){background:#FFFDF9}
 .note:hover{transform:rotate(0) translateY(-4px);box-shadow:9px 9px 0 var(--ink)}
 .note .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);display:inline-block;margin-bottom:12px}
-.note:nth-child(1) .dot{background:var(--accent)}
-.note:nth-child(2) .dot{background:var(--accent-3)}
-.note:nth-child(3) .dot{background:var(--accent-2)}
-.note:nth-child(4) .dot{background:var(--card)}
+.note:nth-child(3n+1) .dot{background:var(--accent)}
+.note:nth-child(3n+2) .dot{background:var(--accent-3)}
+.note:nth-child(3n) .dot{background:var(--accent-2)}
 
 /* ---------- live projects ---------- */
 .project-grid{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
@@ -224,6 +227,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offse
 
 /* ---------- responsive ---------- */
 @media (max-width:960px){
+  .about-grid{grid-template-columns:1fr 1fr}
   .project-grid{grid-template-columns:1fr 1fr}
   .product-grid{grid-template-columns:1fr 1fr}
 }
@@ -269,10 +273,12 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offse
     <span class="kicker">About</span>
     <h2 id="about-h">A few interesting things about me</h2>
     <div class="about-grid">
-      <div class="note"><span class="dot"></span><strong>Single-file software</strong>I like single-file software. Padelato and Storywalk each ship as one HTML file: no build, no backend, no excuses.</div>
-      <div class="note"><span class="dot"></span><strong>Padel first</strong>I play padel, which is why Padelato exists. Fair draws and live standings beat spreadsheet chaos.</div>
-      <div class="note"><span class="dot"></span><strong>ADHD-friendly tools</strong>I build ADHD-friendly tools. Storywalk exists because long-form reading should not require a neurotypical attention span.</div>
-      <div class="note"><span class="dot"></span><strong>Day job, night job</strong>Day job: AI apps for clients at Tuul. Night job: whatever idea will not leave me alone.</div>
+      <div class="note"><span class="dot"></span><strong>Padel first</strong>I play padel, a lot. Padelato exists because our game nights deserved better than spreadsheet chaos.</div>
+      <div class="note"><span class="dot"></span><strong>Motorhead</strong>Full-blown motorhead. I love machines, and a good long drive is my favorite way to reset.</div>
+      <div class="note"><span class="dot"></span><strong>Adrenaline junkie</strong>Adventure lover. If it gets the heart rate up, count me in.</div>
+      <div class="note"><span class="dot"></span><strong>Curious by default</strong>Science and how the world works fascinate me endlessly. I'm always learning something new, usually down a rabbit hole.</div>
+      <div class="note"><span class="dot"></span><strong>Food and people</strong>I really love good food, and I'm always up for meeting new people and trying new places. Send recommendations.</div>
+      <div class="note"><span class="dot"></span><strong>ADHD brain, ADHD tools</strong>I have an ADHD brain, so I build tools that work with it instead of against it. Storywalk is exhibit A.</div>
     </div>
   </section>
 
