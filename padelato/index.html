@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
-<title>Americano — Padel Tournament</title>
+<title>Padelato · Padel Americano App</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23cdf545'/%3E%3Cpath d='M5 10 Q16 16 5 22 M27 10 Q16 16 27 22' stroke='%23151a20' stroke-width='2' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -641,7 +641,7 @@ body.sheet-lock { position: fixed; left: 0; right: 0; overflow: hidden; }
 <div id="js-warn" style="position:fixed;inset:0;z-index:999;background:#0b0e11;color:#e8edf2;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;font-family:-apple-system,sans-serif">
   <div style="max-width:34ch">
     <div class="splash-spin" style="width:38px;height:38px;border-radius:50%;margin:0 auto 18px;border:3px solid rgba(205,245,69,.2);border-top-color:#cdf545"></div>
-    <b style="font-size:1.1rem">Loading Americano…</b><br><br>
+    <b style="font-size:1.1rem">Loading Padelato…</b><br><br>
     <span style="color:#97a4b0;font-size:.88rem;line-height:1.5">Stuck on this screen? Then this viewer can't run apps (WhatsApp and iOS Files previews can't). Open the file in <b>Safari or Chrome</b> instead.</span>
   </div>
 </div>
@@ -1988,12 +1988,12 @@ const $ = sel => document.querySelector(sel);
 const app = $('#app');
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-const BUILD = 'v37 · 10 Jul 2026'; // bump on every shipped change — confirms which build a device runs
+const BUILD = 'v38 · 29 Aug 2026'; // bump on every shipped change — confirms which build a device runs
 
 const footerHTML = () => `
   <div class="footer">
     <span>Made with <span class="heart">♥</span> for the Padel Potatoes</span>
-    <a href="https://instagram.com/shoe.bum" target="_blank" rel="noopener">@shoe.bum</a>
+    <a href="https://shoebum.io" target="_blank" rel="noopener">shoebum.io</a>
     <span style="font-size:.68rem;color:var(--txt-faint);letter-spacing:.05em">${BUILD}</span>
   </div>`;
 
@@ -2165,8 +2165,8 @@ function renderSetupStep1() {
   app.innerHTML = `
   <div class="screen">
     <div class="setup-hero">
-      <div class="brand">Ameri<em>cano</em></div>
-      <div class="tagline">Fair draws, live scores &amp; standings for your padel session.</div>
+      <div class="brand">Padel<em>ato</em></div>
+      <div class="tagline">The Americano app · fair draws, live scores &amp; standings for your padel session.</div>
     </div>
     <div class="setup-body">
 
