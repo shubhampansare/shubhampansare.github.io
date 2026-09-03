@@ -177,11 +177,14 @@ h2{
 /* ---------- products ---------- */
 .product-grid{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .product{
+  display:block;text-decoration:none;
   background:var(--card);border:2px solid var(--ink);border-radius:var(--radius);
   padding:24px 22px;box-shadow:5px 5px 0 var(--ink);
   transition:transform .18s ease,box-shadow .18s ease;
 }
 .product:hover{transform:translateY(-4px);box-shadow:8px 8px 0 var(--ink)}
+.product .go{margin-top:12px;font-size:13.5px}
+.product:hover .go .arrow{transform:translateX(5px)}
 .mono{
   width:52px;height:52px;border-radius:14px;border:2px solid var(--ink);
   display:flex;align-items:center;justify-content:center;
@@ -287,31 +290,31 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offse
     <span class="kicker">Live projects</span>
     <h2 id="projects-h">Things you can use right now</h2>
     <div class="project-grid">
-      <a class="project-card card-sr" href="https://sendrishta.com" target="_blank" rel="noopener">
+      <a class="project-card card-sr" href="/projects/sendrishta/">
         <div class="shot"><img src="assets/sendrishta.png" alt="SendRishta landing page showing the biodata creator" loading="lazy"></div>
         <div class="body">
           <div class="pill-row"><span class="pill">Live</span></div>
           <h3>SendRishta</h3>
           <p>A modern matrimony biodata creator. Beautiful biodatas in minutes.</p>
-          <span class="go">sendrishta.com <span class="arrow">&#8594;</span></span>
+          <span class="go">The story <span class="arrow">&#8594;</span></span>
         </div>
       </a>
-      <a class="project-card card-pd" href="/padelato/" target="_blank" rel="noopener">
+      <a class="project-card card-pd" href="/projects/padelato/">
         <div class="shot"><img src="assets/padelato.png" alt="Padelato tournament setup screen" loading="lazy"></div>
         <div class="body">
           <div class="pill-row"><span class="pill">Live</span></div>
           <h3>Padelato</h3>
           <p>Run a padel Americano or Mexicano night without spreadsheets. Fair draws, live standings, works offline.</p>
-          <span class="go">shoebum.io/padelato <span class="arrow">&#8594;</span></span>
+          <span class="go">The story <span class="arrow">&#8594;</span></span>
         </div>
       </a>
-      <a class="project-card card-sw" href="/storywalk/" target="_blank" rel="noopener">
+      <a class="project-card card-sw" href="/projects/storywalk/">
         <div class="shot"><img src="assets/storywalk.png" alt="Storywalk title screen with the first chapter ready to play" loading="lazy"></div>
         <div class="body">
           <div class="pill-row"><span class="pill">Live</span></div>
           <h3>Storywalk</h3>
           <p>Long reads, played like a game. Walk through a classic talk one idea at a time. Built for restless attention spans.</p>
-          <span class="go">shoebum.io/storywalk <span class="arrow">&#8594;</span></span>
+          <span class="go">The story <span class="arrow">&#8594;</span></span>
         </div>
       </a>
     </div>
@@ -322,10 +325,10 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offse
     <h2 id="products-h">Products I've worked on</h2>
     <p class="section-sub">Client and studio work</p>
     <div class="product-grid">
-      <div class="product"><div class="mono">AA</div><h3>AI Angler</h3><p>A fishing tournament companion app.</p></div>
-      <div class="product"><div class="mono">FS</div><h3>FishScore</h3><p>Fish measurement and scoring, from a photo.</p></div>
-      <div class="product"><div class="mono">PI</div><h3>PawsitivID</h3><p>AI pet management, licensing, and pet services.</p></div>
-      <div class="product"><div class="mono">TJ</div><h3>Travjoy</h3><p>A travel app for discovering destinations and experiences.</p></div>
+      <a class="product" href="/projects/ai-angler/"><div class="mono">AA</div><h3>AI Angler</h3><p>A fishing tournament companion app.</p><span class="go">The story <span class="arrow">&#8594;</span></span></a>
+      <a class="product" href="/projects/fishscore/"><div class="mono">FS</div><h3>FishScore</h3><p>Fish measurement and scoring, from a photo.</p><span class="go">The story <span class="arrow">&#8594;</span></span></a>
+      <a class="product" href="/projects/pawsitivid/"><div class="mono">PI</div><h3>PawsitivID</h3><p>AI pet management, licensing, and pet services.</p><span class="go">The story <span class="arrow">&#8594;</span></span></a>
+      <a class="product" href="/projects/travjoy/"><div class="mono">TJ</div><h3>Travjoy</h3><p>A travel app for discovering destinations and experiences.</p><span class="go">The story <span class="arrow">&#8594;</span></span></a>
     </div>
   </section>
 

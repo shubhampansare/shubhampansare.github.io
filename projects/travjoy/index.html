@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travjoy - shoebum</title>
+<meta name="description" content="Expert-curated travel, bookable in one place. The story behind Travjoy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%9F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..700,0..100,0..1;1,9..144,500..700,0..100,0..1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF6EC;
+  --card:#FFFFFF;
+  --ink:#221A14;
+  --accent:#221A14;
+  --accent-text:#FFF6EC;
+  --radius:20px;
+  --display:"Fraunces","Georgia",serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .035 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--accent);color:var(--accent-text)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding-left:24px;padding-right:24px}
+header{padding-top:26px;padding-bottom:10px}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;row-gap:12px}
+.wordmark{font-family:var(--display);font-variation-settings:"opsz" 40,"SOFT" 60,"WONK" 1;font-weight:700;font-size:22px;text-decoration:none;display:inline-block;background:var(--card);border:2px solid var(--ink);border-radius:999px;padding:3px 16px 5px;box-shadow:4px 4px 0 var(--ink);transform:rotate(-2deg);transition:transform .18s ease,box-shadow .18s ease}
+.wordmark:hover{transform:rotate(2deg) translateY(-2px);box-shadow:6px 6px 0 var(--accent)}
+.backlink{font-weight:700;font-size:15px;text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:1px;white-space:nowrap}
+.backlink:hover{border-bottom-width:5px}
+.hero{padding-top:44px;padding-bottom:8px}
+.kicker{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:var(--accent);color:var(--accent-text);border:2px solid var(--ink);border-radius:999px;padding:3px 14px;box-shadow:3px 3px 0 var(--ink);transform:rotate(-1.5deg);margin-bottom:20px}
+h1{font-family:var(--display);font-variation-settings:"opsz" 144,"SOFT" 40,"WONK" 1;font-weight:600;font-size:clamp(42px,9vw,72px);line-height:1.04;letter-spacing:-.01em}
+.one-liner{margin-top:14px;font-size:20px;color:#4b4038;max-width:44ch}
+section{padding-top:34px}
+h2{font-family:var(--display);font-variation-settings:"opsz" 100,"SOFT" 50,"WONK" 1;font-weight:600;font-size:clamp(24px,4vw,30px);line-height:1.15;margin-bottom:12px}
+h2 .tick{display:inline-block;width:.55em;height:.55em;border-radius:50%;border:2px solid var(--ink);background:var(--accent);margin-right:10px;vertical-align:baseline}
+.prose p{margin-bottom:12px;color:#3c332b;max-width:62ch}
+.shot{margin-top:44px;border:2px solid var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:8px 8px 0 var(--accent);background:#EDE4D8}
+.shot img{width:100%;height:auto}
+.cta-row{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn{font-family:var(--body);font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block;border-radius:14px;padding:13px 26px;border:2px solid var(--ink);transition:transform .18s ease,box-shadow .18s ease}
+.btn-primary{background:var(--ink);color:var(--bg);box-shadow:5px 5px 0 var(--accent)}
+.btn-primary:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--accent)}
+.btn-ghost{background:var(--card);box-shadow:5px 5px 0 var(--ink)}
+.btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--accent)}
+footer{padding-top:56px;padding-bottom:56px;text-align:center;font-size:14.5px;color:#6b5e52}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media (max-width:700px){body{font-size:16px}.one-liner{font-size:18px}}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="header-row">
+    <a class="wordmark" href="/">shoebum</a>
+    <a class="backlink" href="/#projects">All projects</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <span class="kicker">Studio work</span>
+    <h1>Travjoy</h1>
+    <p class="one-liner">Expert-curated travel, bookable in one place.</p>
+  </div>
+
+  <section aria-labelledby="what-h">
+    <h2 id="what-h"><span class="tick"></span>What it is</h2>
+    <div class="prose"><p>Travjoy is a travel guide platform where destination specialists curate what is genuinely worth your time - tours, dining, attractions, transfers, nightlife - across 10+ destinations, with instant booking built in.</p>
+    <p>Full city guides, expert profiles, and know-before-you-go notes turn scattered research into one trustworthy shortlist.</p></div>
+  </section>
+
+  <section aria-labelledby="why-h">
+    <h2 id="why-h"><span class="tick"></span>Why it exists</h2>
+    <div class="prose"><p>Planning a trip means hours across a dozen tabs, reviews you cannot trust, and bookings spread over five platforms. Travjoy compresses that into a vetted shortlist from someone who actually knows the place.</p>
+    <p>It is built at Tuul, where I head product, and it is the product I get to stress-test personally - I love to travel.</p></div>
+  </section>
+
+  <section aria-labelledby="gets-h">
+    <h2 id="gets-h"><span class="tick"></span>What it gets you</h2>
+    <div class="prose"><p>Skip the research rabbit hole: get the good stuff for your destination, compare operators, and book it where you found it.</p>
+    <p>Recommendations are locally verified by specialists, not scraped from the same ten listicles.</p></div>
+  </section>
+
+  
+
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://travjoy.com" target="_blank" rel="noopener">Visit travjoy.com</a>
+    <a class="btn btn-ghost" href="/#projects">Back to all projects</a>
+  </div>
+</main>
+
+<footer class="wrap">
+  shoebum.io - handmade, one HTML file, no frameworks. &copy; 2026 Shubham Pansare.
+</footer>
+
+</body>
+</html>
